@@ -16,9 +16,8 @@ function add(a, b) {
 
         // Create a new AddRequest object
         const message = AddRequest.create({ a: a, b: b });
-        var response = new AddResponse();
 
-        add(message, response);
+        var resp = add(message);
 
         console.log("Addition result:", response.result);
       });
